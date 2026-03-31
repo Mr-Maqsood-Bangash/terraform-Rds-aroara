@@ -1,0 +1,15 @@
+db_secret_name = "dev/mysql/my-app"
+vpc_id =  "vpc-04651e5956909f974"
+subnet_group_name = "app-rds-subnet-group-prod"
+sg_group_name = "app-rds-sg-prod"
+subnet_ids = [ "subnet-08641034542523a33","subnet-0fdc982bf74633074","subnet-0a5f1401b0783d582" ]
+db_identifier = "app-mysql-db"
+db_name = "appdbprod"
+db_engine = "mysql"
+db_engine_version = "8.4.7" 
+instance_class = "db.t4g.micro"
+allocated_storage = 20
+storage_type = "gp2"
+allowed_cidr_blocks = ["0.0.0.0/0"]
+environment = "prod"
+project = "RDS-Automation"
